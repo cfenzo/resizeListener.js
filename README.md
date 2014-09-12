@@ -3,7 +3,7 @@ resizeListener.js
 
 Detect `resize` on elements.
 
-Use it like this:
+### Use
 ```javascript
 // element
 var element = document.getElementById('#id');
@@ -25,5 +25,5 @@ resizeListener.remove(element,on_resize);
 resizeListener.remove(element);
 ```
 
-### Notice ###
+### Notice
 The elements `position` is set to `relative` on "add".
