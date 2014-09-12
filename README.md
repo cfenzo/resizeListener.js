@@ -1,4 +1,4 @@
-resizeListener
+resizeListener.js
 ==============
 
-Emulates 'resize' events on elements
+Emulates `resize` events on elements
