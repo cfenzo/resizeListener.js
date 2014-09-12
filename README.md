@@ -26,4 +26,4 @@ resizeListener.remove(element);
 ```
 
 ### Notice
-The elements `position` is set to `relative` on "add".
+The elements `position` is set to `relative` when a `resizeListener` is added
