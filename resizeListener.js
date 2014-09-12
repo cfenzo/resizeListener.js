@@ -1,4 +1,4 @@
-/*! resizeListener | Author: Jens Anders Bakke (http://webfreak.no), 2014 | Credits: object-based resize detection based on http://www.backalleycoder.com/2014/04/18/element-queries-from-the-feet-up/ | License: MIT */
+/*! resizeListener.js | Author: Jens Anders Bakke (http://webfreak.no), 2014 | URL: https://github.com/cfenzo/resizeListener.js | Credits: object-based resize detection based on http://www.backalleycoder.com/2014/04/18/element-queries-from-the-feet-up/ | License: MIT */
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
