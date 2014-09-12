@@ -2,8 +2,8 @@ resizeListener.js
 ==============
 
 Listen to `resize` on HTML elements.
-* Detects resize of elements using `<object>`*
-* Polling-fallback for SVG.
+* Detects resize of HTML elements using `<object>`*
+* Poll based fallback for SVG.
 * 1,231 bytes minified+gzip
 
 ### Use
