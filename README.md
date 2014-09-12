@@ -36,3 +36,9 @@ Latest browser versions supported, test-suite in the works
 
 ### Why not just check size on `window.resize`?
 Because the size of an element can be changed by more than a resize of the browser/window, and some times you need to detect that too.
+
+
+### TODO
+* Look into using proper "resize" events on IE<10 (one thing besides box-model that old IE had right)
+* Take a closer look at the SVG checks
+* Improve `use_polling` to include checks for elements that cannot have `<object>` as child elements
