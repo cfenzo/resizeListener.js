@@ -1,7 +1,7 @@
 resizeListener.js
 ==============
 
-Emulates `resize` events on elements
+Detect `resize` on elements.
 
 Use it like this:
 ```javascript
