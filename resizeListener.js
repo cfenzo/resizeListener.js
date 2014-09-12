@@ -24,7 +24,7 @@
         _poller_interval = 250,
         _poller_runner,
         _poller_elements = [],
-        object_style = 'display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: none;padding: 0;margin: 0;opacity: 0;z-index: -1000;pointer-events: none;';
+        object_style = 'display:block;position:absolute;top:0;left:0;width:100%;height:100%;border:none;padding:0;margin:0;opacity:0;z-index:-1000;pointer-events:none;';
 
     function debounceTrigger(){
         var el = this;
@@ -44,7 +44,7 @@
         element.setAttribute(sensorDataAttr,'true');
         addSensorStyles(sensorDataAttr);
         var obj = document.createElement('object');
-        obj.__queryelement__ = element;
+        obj.__qe__ = element;
         obj.onload = objectLoad;
         obj.type = 'text/html';
         if (!isIE) obj.data = 'about:blank';
@@ -53,11 +53,11 @@
         return obj;
     }
     function objectLoad(){
-        var element = this.__queryelement__,
+        var element = this.__qe__,
             doc = element.__eq__.doc = this.contentDocument,
             win = doc.defaultView || doc.parentWindow;
 
-        doc.__queryelement__ = element;
+        doc.__qe__ = element;
         win.addEventListener('resize', function(){
             debounceTrigger.call(element);
         });
@@ -66,7 +66,7 @@
     }
     function addSensorStyles(sensorDataAttr){
         if(!styles_added[sensorDataAttr]){
-            var style = '['+sensorDataAttr+'] {position: relative;} ['+sensorDataAttr+'] > object {'+object_style+'}';
+            var style = '['+sensorDataAttr+']{position: relative;} ['+sensorDataAttr+'] > object{'+object_style+'}';
             if(!stylesheet){
                 stylesheet = document.createElement('style');
                 stylesheet.type = 'text/css';
