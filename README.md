@@ -1,9 +1,10 @@
 resizeListener.js
 ==============
 
-Listen to `resize` on HTML elements (with polling-fallback for SVG elements).
-
-1,231 bytes minified+gzip
+Listen to `resize` on HTML elements.
+* Detects resize of elements using `<object>` <small>(based on ["Element Queries, From the Feet Up" by Back Alley Coder](http://www.backalleycoder.com/2014/04/18/element-queries-from-the-feet-up/))</small>
+* Polling-fallback for SVG.
+* 1,231 bytes minified+gzip
 
 ### Use
 ```javascript
