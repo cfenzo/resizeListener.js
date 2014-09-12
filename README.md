@@ -28,8 +28,8 @@ resizeListener.remove(element);
 ### Notice
 The elements `position` is set to `relative` when a `resizeListener` is added
 
-### Why?
-Some times listening to `window.resize` just isn't enough
-
 ### Browser support
 Latest browser versions supported, test-suite in the works
+
+### Why not just check size on `window.resize`?
+Because the size of an element can be changed by more than a resize of the browser/window, and some times you need to detect that too.
