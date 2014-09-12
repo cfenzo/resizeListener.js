@@ -1,7 +1,9 @@
 resizeListener.js
 ==============
 
-Listen to `resize` on HTML elements.
+Listen to `resize` on HTML elements (with polling-fallback for SVG elements).
+
+1,231 bytes minified+gzip
 
 ### Use
 ```javascript
