@@ -27,8 +27,9 @@ resizeListener.remove(element,on_resize);
 resizeListener.remove(element);
 ```
 
-### Notice
-The elements `position` is set to `relative` when a `resizeListener` is added
+### Important!
+* The elements `position` is set to `relative` when a `resizeListener` is added
+* Only apply this to elements that can have child elements (with SVG as exception), as technique involves adding a `<object>` to the element.
 
 ### Browser support
 Latest browser versions supported, test-suite in the works
