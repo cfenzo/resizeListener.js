@@ -44,4 +44,4 @@ Because the size of an element can be changed by more than a resize of the brows
 * Improve `use_polling` to include checks for elements that cannot have `<object>` as child elements
 
 ### Credits
-The resize-detection would have been bollocks if it wasn't for [Back Alley Coder](http://www.backalleycoder.com/2014/04/18/element-queries-from-the-feet-up/), which the `<object>` based resize detection is based heavily on.
+The resize-detection would have been bollocks if it wasn't for ["Element Queries, From the Feet Up" by Back Alley Coder](http://www.backalleycoder.com/2014/04/18/element-queries-from-the-feet-up/), which the `<object>` based resize detection is based heavily on.
