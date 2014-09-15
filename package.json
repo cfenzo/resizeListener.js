@@ -4,7 +4,6 @@
     "testling" : {
         "html" : "test/test.html",
         "browsers" : [
-            "phantom",
             "ie/6..latest",
             "chrome/20..latest",
             "firefox/10..latest",
