@@ -101,7 +101,7 @@
             el.__trigger__ = requestFrame(function(){
                 var size = el._lastSize || {width:el.offsetWidth,height:el.offsetHeight};
                 el.__eq__.fn.forEach(function(fn){
-                    fn.call(el, size);
+                    fn.call(el, size, el);
                 });
                 el.__trigger__ = null;
             });
