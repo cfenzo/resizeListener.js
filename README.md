@@ -2,9 +2,11 @@ resizeListener.js
 ==============
 
 Listen to `resize` on HTML elements.
-* Detects resize of HTML elements using `<object>`*
-* Poll based fallback for SVG.
-* 1,231 bytes minified+gzip
+* Detects resize of HTML elements using:
+  * Native `resize` event for IE < 11
+  * Poll based fallback for `img`,`iframe`,`picture`,`audio`,`video`,`object`,`embed`, and any SVG element
+  * `<object>`* for every other element
+* 1,807 bytes minified+gzip
 
 ### Use
 ```javascript
@@ -29,8 +31,9 @@ resizeListener.remove(element);
 ```
 
 ### Important!
-* The elements `position` is set to `relative` when a `resizeListener` is added
-* Only apply this to elements that can have `<object>` as child elements (with SVG as exception), as this technique involves adding a `<object>` to the element.
+* IE < 8 can only trigger the resize event when it has layout. See [on having layout](http://www.satzansatz.de/cssd/onhavinglayout.html) for more info.
+* The elements `position` is set to `relative` when a `resizeListener` is added (but not in IE < 11, or when using poll)
+* The following tags will get poll fallback: `img`,`iframe`,`picture`,`audio`,`video`,`object`,`embed`, and any SVG element.
 
 ### Browser support
 Latest browser versions supported, test-suite in the works
