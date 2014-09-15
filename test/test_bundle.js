@@ -5506,7 +5506,7 @@ function through (write, end, opts) {
     // for svg/fallback
     function use_poll(element){
         // TODO add more tests for elements that needs poll (svg++, video?, audio?, iframe?)
-        return element instanceof SVGElement || !!element.ownerSVGElement || false;
+        return (typeof SVGElement !== 'undefined' && (element instanceof SVGElement || !!element.ownerSVGElement) ) || false;
     }
     function addResizePoller(element){
         if(_poller_elements.indexOf(element) === -1) _poller_elements.push(element);
